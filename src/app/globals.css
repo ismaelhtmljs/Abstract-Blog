@@ -7,12 +7,45 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+::selection{
+  background-color: #171717;
+  color: #ffffff;
+}
+
+.margin-center{
+  margin: 0 auto;
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ededed;
+    --foreground: #0a0a0a;
+  }
+} */
+
+/* Ancho de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho vertical */
+  height: 10px; /* Ancho horizontal */
+}
+
+/* Fondo de la barra (track) */
+::-webkit-scrollbar-track {
+  background: #ffffff; /* Color del fondo */
+}
+
+/* Color y estilo del "pulgar" (thumb), la parte que se mueve */
+::-webkit-scrollbar-thumb {
+  background: #2f2f2f; /* Color del thumb */
+}
+
 
 body {
   color: var(--foreground);
